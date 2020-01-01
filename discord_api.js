@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const fetch = require('node-fetch');
 require('dotenv').config();
 botKey = process.env.testingBotKey;
 
