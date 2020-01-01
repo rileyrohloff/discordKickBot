@@ -1,0 +1,13 @@
+{
+  "name": "discordKickApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "discord_api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node discord_api.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
