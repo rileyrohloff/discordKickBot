@@ -28,9 +28,9 @@ client.on('message', msg => {
               msg.reply(`${member.displayName} now has role of ${role.name}`);
           }
       }
-      
+
   }
 });
 
 
-client.login('NjM0NjIxMDQxNjI0MzUwNzI5.XalK7A.NCYMNt1ssqtVtjQuA6WmatBrI_k');
+client.login('secretKeyGoesHere');
