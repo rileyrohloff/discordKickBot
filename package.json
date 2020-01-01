@@ -4,7 +4,7 @@
   "description": "",
   "main": "discord_api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node discord_api.js",
     "start": "pm2 start discord_api.js"
   },
   "keywords": [],
