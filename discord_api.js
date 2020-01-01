@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
+require('dotenv').config();
+botKey = process.env.testingBotKey;
 
 
 const client = new Discord.Client();
@@ -33,4 +35,5 @@ client.on('message', msg => {
 });
 
 
-client.login('secretKeyGoesHere');
+client.login(botKey);
+// console.log(process.env.testingBotKey);

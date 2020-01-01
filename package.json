@@ -5,9 +5,13 @@
   "main": "discord_api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node discord_api.js"
+    "start": "node discord_api.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  }
 }
