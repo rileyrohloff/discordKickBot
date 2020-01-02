@@ -23,9 +23,23 @@ client.on('message', msg => {
               msg.reply('Lol, nice try...')
           }
           else {
-              const roleID = role.id;
-              member.addRole(roleID).catch(console.error);
-              // console.log(msg.member.permissions);
+              const memberRoleList = member.roles;
+              const rolesToRemove = memberRoleList.filter(role => {
+                  if (role.name != "634808314995146774" || role.id != "634609153289093120") {
+                    return true;
+                  } else {
+                      return false;
+                  }
+              });
+
+              console.log(rolesToRemove.map(role => role.name));
+              member.removeRoles(rolesToRemove).then(() => member.addRole("634808314995146774")
+                  .then(() => setTimeout(() => {
+                      member.addRoles(rolesToRemove);
+                      member.removeRole('634808314995146774');
+                      console.log("This ran");
+                  }, 5000)));
+
               msg.reply(`${member.displayName} now has role of ${role.name}`);
           }
       }
